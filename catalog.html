@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPÍTULO I — DESTERRADO</title>
+  <link rel="icon" href="assets/logo-bull.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <a class="wordmark" href="index.html">DESTERRADO</a>
+    <nav>
+      <a href="index.html">Home</a><span class="dot">·</span>
+      <a href="catalog.html" aria-current="page">Catalog</a><span class="dot">·</span>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="mark" href="index.html" aria-label="Desterrado">
+      <img src="assets/logo-bull.png" alt="Desterrado">
+    </a>
+  </header>
+
+  <main>
+    <h1 class="collection-title">CAPÍTULO I</h1>
+
+    <div class="toolbar">
+      <div class="filters">
+        <details class="filter" id="f-availability">
+          <summary>Availability</summary>
+          <div class="menu" data-filter="availability">
+            <label class="checked"><input type="radio" name="availability" value="all" checked>All</label>
+            <label><input type="radio" name="availability" value="available">Available</label>
+            <label><input type="radio" name="availability" value="soldout">Sold out</label>
+          </div>
+        </details>
+        <details class="filter" id="f-price">
+          <summary>Price</summary>
+          <div class="menu" data-filter="price">
+            <label class="checked"><input type="radio" name="price" value="all" checked>All</label>
+            <label><input type="radio" name="price" value="under200">Under $200</label>
+            <label><input type="radio" name="price" value="200to300">$200 – $300</label>
+            <label><input type="radio" name="price" value="over300">$300+</label>
+          </div>
+        </details>
+      </div>
+
+      <div class="right">
+        <span id="count">4 items</span>
+        <details class="filter" id="f-sort">
+          <summary>Sort</summary>
+          <div class="menu" data-filter="sort">
+            <label class="checked"><input type="radio" name="sort" value="featured" checked>Featured</label>
+            <label><input type="radio" name="sort" value="az">Alphabetical, A–Z</label>
+            <label><input type="radio" name="sort" value="price-asc">Price, low to high</label>
+            <label><input type="radio" name="sort" value="price-desc">Price, high to low</label>
+          </div>
+        </details>
+        <div class="view-toggle">
+          <button id="view-grid" class="active" aria-label="Grid view">
+            <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6"/><rect x="9" y="1" width="6" height="6"/><rect x="1" y="9" width="6" height="6"/><rect x="9" y="9" width="6" height="6"/></svg>
+          </button>
+          <button id="view-list" aria-label="List view">
+            <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="2" width="14" height="2"/><rect x="1" y="7" width="14" height="2"/><rect x="1" y="12" width="14" height="2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="grid" id="grid">
+
+      <a class="product sold-out" href="#" data-name="camisa bordada carmesí" data-price="185">
+        <span class="tile"><img src="assets/products/shirt-carmesi.jpg" alt="Camisa bordada carmesí"><span class="soldout-tag">SOLD OUT</span></span>
+        <span class="meta"><span class="name">Camisa Bordada Carmesí</span><span class="price">$185</span></span>
+      </a>
+
+      <a class="product sold-out" href="#" data-name="pantalón plisado arena" data-price="160">
+        <span class="tile"><img src="assets/products/trousers-arena.jpg" alt="Pantalón plisado arena"><span class="soldout-tag">SOLD OUT</span></span>
+        <span class="meta"><span class="name">Pantalón Plisado Arena</span><span class="price">$160</span></span>
+      </a>
+
+      <a class="product sold-out" href="#" data-name="pantalón plisado obsidiana" data-price="160">
+        <span class="tile"><img src="assets/products/trousers-obsidiana.jpg" alt="Pantalón plisado obsidiana"><span class="soldout-tag">SOLD OUT</span></span>
+        <span class="meta"><span class="name">Pantalón Plisado Obsidiana</span><span class="price">$160</span></span>
+      </a>
+
+      <a class="product sold-out" href="#" data-name="camisa bordada esmeralda" data-price="185">
+        <span class="tile"><img src="assets/products/shirt-esmeralda.jpg" alt="Camisa bordada esmeralda"><span class="soldout-tag">SOLD OUT</span></span>
+        <span class="meta"><span class="name">Camisa Bordada Esmeralda</span><span class="price">$185</span></span>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 DESTERRADO</span>
+    <span>THE WARDROBE OF THE LATIN MAN WITHOUT A COURT</span>
+    <span>CAPÍTULO I — CUMBIA</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
